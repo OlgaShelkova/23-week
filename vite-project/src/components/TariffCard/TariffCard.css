@@ -1,0 +1,64 @@
+.tariff-card {
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  border: 2px solid white;
+  width: 25%;
+}
+.tariff-card h1,
+.tariff-card h2,
+.tariff-card p {
+  margin: 0;
+}
+.tariff-card.selected {
+  width: 30%;
+}
+.tariff-card:hover {
+  width: calc(25% + 30px);
+}
+.tariff-card .name {
+  font-size: 20px;
+  color: white;
+  padding: 10px 0;
+  font-size: 30px;
+}
+.tariff-card .price-container {
+  margin: 0;
+}
+.tariff-card .price {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 20px;
+  color: white;
+  padding: 5vh;
+}
+.tariff-card .price .currency {
+  position: absolute;
+  top: 22%;
+  left: 22%;
+  font-size: 20px;
+}
+.tariff-card .price .price-amount {
+  font-size: 60px;
+}
+.tariff-card .price .time {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+}
+.tariff-card .speed,
+.tariff-card .traffic {
+  color: #808080;
+  font-size: 20px;
+  padding: 5px 0;
+}
+.tariff-card .speed {
+  background-color: white;
+  height: 100%;
+}
+.tariff-card .traffic {
+  background-color: #e4e1e1;
+}/*# sourceMappingURL=TariffCard.css.map */

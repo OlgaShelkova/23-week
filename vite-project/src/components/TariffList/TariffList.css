@@ -1,0 +1,10 @@
+@charset "UTF-8";
+.tariff-list {
+  display: flex; /* Размещаем дочерние элементы в строку */
+  justify-content: space-between; /* Распределяем между ними пространство равномерно */
+  flex-wrap: nowrap; /* Запрещаем перенос элементов на следующую строку */
+}
+
+.tariff-list .tariff-card {
+  flex: 0 1 auto; /* Устанавливаем элементам возможность увеличивать и уменьшать свою ширину */
+}/*# sourceMappingURL=TariffList.css.map */

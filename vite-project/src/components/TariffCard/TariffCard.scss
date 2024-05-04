@@ -1,0 +1,70 @@
+$gray-text-color: #808080;
+$white-color: white;
+$cardSize: 25%; // Размер карточки
+.tariff-card {
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  border: 2px solid $white-color;
+  width: $cardSize;
+  h1,
+  h2,
+  p {
+    margin: 0;
+  }
+  &.selected {
+    width: 30%;
+  }
+  &:hover {
+    width: calc(#{$cardSize} + 30px);
+  }
+  .name {
+    font-size: 20px;
+    color: $white-color;
+    padding: 10px 0;
+    font-size: 30px;
+  }
+  .price-container {
+    margin: 0;
+  }
+  .price {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 20px;
+    color: $white-color;
+    padding: 5vh;
+    .currency {
+      position: absolute;
+      top: 22%;
+      left: 22%;
+      font-size: 20px;
+    }
+
+    .price-amount {
+      font-size: 60px;
+    }
+
+    .time {
+      position: absolute;
+      top: 50%;
+      right: 15%;
+    }
+  }
+
+  .speed,
+  .traffic {
+    color: $gray-text-color;
+    font-size: 20px;
+    padding: 5px 0;
+  }
+  .speed {
+    background-color: white;
+    height: 100%;
+  }
+  .traffic {
+    background-color: #e4e1e1;
+  }
+}
