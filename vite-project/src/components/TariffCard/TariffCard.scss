@@ -1,6 +1,9 @@
 $gray-text-color: #808080;
 $white-color: white;
 $cardSize: 25%; // Размер карточки
+$cardHeight: 400px;
+$shadow-color: rgba(0, 0, 0, 0.5); 
+$shadow-blur: 10px; // Радиус размытия тени
 .tariff-card {
   padding: 1px;
   display: flex;
@@ -8,6 +11,8 @@ $cardSize: 25%; // Размер карточки
   gap: 1px;
   border: 2px solid $white-color;
   width: $cardSize;
+  height: $cardHeight;
+  box-shadow: 0 $shadow-blur $shadow-blur $shadow-color;
   h1,
   h2,
   p {

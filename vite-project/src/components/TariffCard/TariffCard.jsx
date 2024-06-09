@@ -1,13 +1,17 @@
 import React from "react";
 import "./TariffCard.scss";
 
-function TariffCard({ tariff }) {
+function TariffCard({ tariff, onTariffSelect }) {
   function getCardClass() {
     let className = "tariff-card";
     if (tariff.isSelected) {
       className += " selected";
     }
     return className;
+  }
+
+  function handleClick() {
+    onTariffSelect(tariff.id);
   }
 
   function getNameStyle() {
@@ -23,7 +27,7 @@ function TariffCard({ tariff }) {
   }
 
   return (
-    <div className={getCardClass()}>
+    <div className={getCardClass()} onClick={handleClick}>
       <h2 className="name" style={getNameStyle()}>
         {tariff.name.text}
       </h2>

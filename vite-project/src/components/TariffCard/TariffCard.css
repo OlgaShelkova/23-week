@@ -5,6 +5,8 @@
   gap: 1px;
   border: 2px solid white;
   width: 25%;
+  height: 400px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 .tariff-card h1,
 .tariff-card h2,
